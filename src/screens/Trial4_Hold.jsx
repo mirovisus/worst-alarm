@@ -55,7 +55,7 @@ export default function Trial4_Hold({ step, failedAttempts, onSuccess, onFail })
           Hold the button for exactly {TARGET} seconds.<br />No more, no less!
         </p>
       </div>
-      <div className="w-full mt-auto">
+      <div className="w-full">
         <button
           onMouseDown={start}
           onMouseUp={stop}
