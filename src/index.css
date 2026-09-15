@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Space Grotesk', sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: #0a0a0a;
+}
+
+/* Glassmorphism button shared by all non-Stroop buttons */
+.glass-btn {
+  --btn-bg: rgba(255, 255, 255, 0.08);
+  --btn-bg-hover: rgba(255, 255, 255, 0.14);
+  --btn-border: rgba(255, 255, 255, 0.15);
+  --btn-border-hover: rgba(255, 255, 255, 0.35);
+  background: var(--btn-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--btn-border);
+  border-radius: 12px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  transition: background 150ms ease, border-color 150ms ease, transform 100ms ease;
+}
+.glass-btn:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-hover);
+}
+.glass-btn:active {
+  transform: scale(0.95);
+}
+.glass-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.glass-btn:disabled:hover {
+  background: var(--btn-bg);
+  border-color: var(--btn-border);
+}
+
+/* Color variants: transparent glass with a colored glow, matching the Stroop color-choice buttons */
+.glass-btn-purple {
+  --btn-bg: rgba(168, 85, 247, 0.33);
+  --btn-bg-hover: rgba(168, 85, 247, 0.45);
+  --btn-border: rgb(168, 85, 247);
+  --btn-border-hover: rgb(168, 85, 247);
+  box-shadow: 0 0 14px rgba(168, 85, 247, 0.33);
+}
+.glass-btn-cyan {
+  --btn-bg: rgba(34, 211, 238, 0.33);
+  --btn-bg-hover: rgba(34, 211, 238, 0.45);
+  --btn-border: rgb(34, 211, 238);
+  --btn-border-hover: rgb(34, 211, 238);
+  box-shadow: 0 0 14px rgba(34, 211, 238, 0.33);
+}
+.glass-btn-blue {
+  --btn-bg: rgba(74, 158, 255, 0.33);
+  --btn-bg-hover: rgba(74, 158, 255, 0.45);
+  --btn-border: rgb(74, 158, 255);
+  --btn-border-hover: rgb(74, 158, 255);
+  box-shadow: 0 0 14px rgba(74, 158, 255, 0.33);
+}
+.glass-btn-pink {
+  --btn-bg: rgba(244, 114, 182, 0.33);
+  --btn-bg-hover: rgba(244, 114, 182, 0.45);
+  --btn-border: rgb(244, 114, 182);
+  --btn-border-hover: rgb(244, 114, 182);
+  box-shadow: 0 0 14px rgba(244, 114, 182, 0.33);
+}
+
+/* Start warm-up CTA on the success screen */
+.glass-btn-start-warmup {
+  --btn-bg: rgba(49, 111, 246, 0.5);
+  --btn-bg-hover: rgba(49, 111, 246, 0.5);
+  --btn-border: rgba(69, 115, 255, 0.8);
+  --btn-border-hover: rgba(69, 115, 255, 0.8);
+  color: #b1c4fa;
+}
+
+/* Idle bounce on the swipe-up chevron */
+@keyframes swipe-hint {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+.swipe-hint {
+  animation: swipe-hint 1.5s ease-in-out infinite;
+}
+
+/* Screen shake on a failed attempt */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+.shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+/* Fail message fades out */
+@keyframes fade-out {
+  0%, 60% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.fail-msg {
+  color: #ff6b6b;
+  animation: fade-out 1.5s ease-out forwards;
+}
