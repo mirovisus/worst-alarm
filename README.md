@@ -19,8 +19,6 @@ Deliberately breaks core UX laws to explore why they matter through hostile desi
 
 - React 19 + Vite
 - Tailwind CSS v4
-- Lucide React (icons)
-- Deployed on Vercel
 
 ## Run locally
 
