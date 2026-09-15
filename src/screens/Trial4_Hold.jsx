@@ -49,13 +49,13 @@ export default function Trial4_Hold({ step, failedAttempts, onSuccess, onFail })
 
   return (
     <TrialLayout step={step} failedAttempts={failedAttempts} message={message}>
-      <div className="text-center">
+      <div className="flex-1 w-full flex flex-col items-center justify-center text-center">
         <h2 className="text-2xl font-medium">Press &amp; Hold</h2>
         <p className="text-sm text-white/55 mt-1">
           Hold the button for exactly {TARGET} seconds.<br />No more, no less!
         </p>
       </div>
-      <div className="w-full">
+      <div className="w-full mt-auto">
         <button
           onMouseDown={start}
           onMouseUp={stop}
