@@ -5,9 +5,16 @@
   color-scheme: dark;
 }
 
+html,
 body {
   margin: 0;
+  height: 100%;
+  overflow: hidden;
   background: #0a0a0a;
+}
+
+#root {
+  height: 100%;
 }
 
 /* Glassmorphism button shared by all non-Stroop buttons */

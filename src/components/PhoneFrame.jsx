@@ -3,9 +3,9 @@ import StatusBar from './StatusBar'
 // background: "main" | "trial" | "final" -> /<name>.webp in public/
 export default function PhoneFrame({ children, background = 'main', time = '7:41' }) {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-neutral-950 text-white">
+    <div className="min-h-dvh w-full flex items-center justify-center bg-neutral-950 text-white overflow-hidden">
       <div
-        className="relative w-full h-screen sm:w-[390px] sm:h-[844px] sm:rounded-[48px] sm:border sm:border-neutral-700 sm:shadow-[0_30px_80px_rgba(0,0,0,0.7)] overflow-hidden flex flex-col bg-cover bg-center bg-[#05061a]"
+        className="relative w-full h-dvh sm:w-[390px] sm:h-[844px] sm:rounded-[48px] sm:border sm:border-neutral-700 sm:shadow-[0_30px_80px_rgba(0,0,0,0.7)] overflow-hidden flex flex-col bg-cover bg-center bg-[#05061a]"
         style={{ backgroundImage: `url(/${background}.webp)` }}
       >
         {/* Notch (desktop only) */}
@@ -15,8 +15,8 @@ export default function PhoneFrame({ children, background = 'main', time = '7:41
 
         {children}
 
-        {/* Home indicator */}
-        <div className="shrink-0 h-6 flex items-end justify-center pb-2">
+        {/* Fake home indicator (desktop only - real device already shows its own) */}
+        <div className="hidden sm:flex shrink-0 h-6 items-end justify-center pb-2">
           <div className="w-[134px] h-[5px] rounded-full bg-white/80" />
         </div>
       </div>
