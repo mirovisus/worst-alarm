@@ -8,7 +8,7 @@ Instead of the classic dismiss/snooze, the user has to complete four randomised 
 3. Stroop test - name the color, not the word (Cognitive Load)
 4. Hold a button for exactly 5 seconds, ±0.5s tolerance (Competence)
 
-**Live demo:** _link coming after deploy_
+**Live demo:** https://worst-alarm.vercel.app
 **Case study:** _Behance link coming soon_
 
 ## Concept
