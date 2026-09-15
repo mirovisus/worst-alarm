@@ -31,5 +31,5 @@ npm run dev
 
 ## Author
 
-Oberiut - full-stack developer & UX/UI designer
+Vasilisa Pozdniakova - full-stack developer & UX/UI designer
 [Behance](https://www.behance.net/vasilisaoberiut) · [Dribbble](https://dribbble.com/oberiutdesign)
