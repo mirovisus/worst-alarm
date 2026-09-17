@@ -9,11 +9,16 @@ Instead of the classic dismiss/snooze, the user has to complete four randomised 
 4. Hold a button for exactly 5 seconds, ±0.5s tolerance (Competence)
 
 **Live demo:** https://worst-alarm.vercel.app
-**Case study:** _Behance link coming soon_
+**Case study:** https://worst-alarm.vercel.app/case
 
 ## Concept
 
 Deliberately breaks core UX laws to explore why they matter through hostile design.
+
+## Demo
+
+![Alarm dismissal via Stroop test](docs/demo.gif)
+
 
 ## Stack
 
