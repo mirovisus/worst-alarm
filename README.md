@@ -17,7 +17,7 @@ Deliberately breaks core UX laws to explore why they matter through hostile desi
 
 ## Demo
 
-![Alarm dismissal via Stroop test](docs/demo.gif)
+![Alarm dismissal via Stroop test](docs/baduxalarm.gif)
 
 
 ## Stack
