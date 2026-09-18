@@ -36,3 +36,4 @@ npm run dev
 
 Vasilisa Pozdniakova - full-stack developer & UX/UI designer
 [Behance](https://www.behance.net/vasilisaoberiut) · [Dribbble](https://dribbble.com/oberiutdesign)
+
