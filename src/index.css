@@ -117,3 +117,15 @@ body {
   color: #ff6b6b;
   animation: fade-out 1.5s ease-out forwards;
 }
+
+/* Desktop-only: scale the whole phone frame down to fit short viewports,
+   keeping proportions identical instead of reflowing any screen's content. */
+@media (min-width: 640px) {
+  .phone-frame {
+    /* scale() needs a unitless ratio; tan(atan2(a, b)) divides two lengths (a/b) without
+       the unit mismatch calc(length / number) would produce. */
+    transform: scale(min(1, tan(atan2(100dvh - 40px, 844px))));
+    transform-origin: center center;
+    will-change: transform;
+  }
+}

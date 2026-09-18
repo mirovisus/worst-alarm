@@ -4,9 +4,9 @@ import StatusBar from './StatusBar'
 // background: null -> no image; the screen renders its own layers (see MainScreen)
 export default function PhoneFrame({ children, background = 'main', time = '7:41' }) {
   return (
-    <div className="min-h-dvh w-full flex items-center justify-center bg-neutral-950 text-white overflow-hidden">
+    <div className="h-dvh w-full flex items-center justify-center bg-neutral-950 text-white overflow-hidden">
       <div
-        className="relative w-full h-dvh sm:w-[390px] sm:h-[844px] sm:rounded-[48px] sm:border sm:border-neutral-700 sm:shadow-[0_30px_80px_rgba(0,0,0,0.7)] overflow-hidden isolate flex flex-col bg-cover bg-center bg-[#05061a]"
+        className="phone-frame relative w-full h-dvh sm:w-[390px] sm:h-[844px] sm:rounded-[48px] sm:border sm:border-neutral-700 sm:shadow-[0_30px_80px_rgba(0,0,0,0.7)] overflow-hidden isolate flex flex-col bg-cover bg-center bg-[#05061a]"
         style={background ? { backgroundImage: `url(/${background}.webp)` } : undefined}
       >
         {/* Notch (desktop only) */}
